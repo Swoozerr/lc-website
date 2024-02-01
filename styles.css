@@ -44,7 +44,7 @@
     font-weight: 800;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: default;
     text-decoration: none;
     color: #fff;
     font-size: 2rem;
@@ -223,10 +223,11 @@
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10vw;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    min-height: 90vh;
     background-color: #fff;
     z-index: 1;
     width: 100%;
@@ -260,9 +261,9 @@
     background-color: #0064C8;
     margin-top: 1rem;
     cursor: pointer;
-    position:relative;
+    position: relative;
     transition: all 0.35s;
-    outline:none;
+    outline: none;
     box-shadow: 0.1rem 0.1rem black;
 }
 
@@ -278,13 +279,16 @@
     color: #fff;
 }
 
-.main__img--container {
-    text-align: center;
+#main__img {
+    max-width: 70%;
+    max-width: 70%;
+    box-shadow: 2rem 2rem black;
+    transition: 0.1s ease-in-out;
 }
 
-#main__img {
-    height: 80%;
-    width:80%;
+#main__img:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
 }
 
 /* Mobile Responsive */
@@ -316,6 +320,12 @@
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+
+    #main__img {
+        max-width: 30%;
+        max-width: 30%;
+        box-shadow: 0.5rem 0.5rem black;
+    }
 }
 
 @media screen and (max-width: 480) { /*even smaller screens*/
@@ -345,7 +355,6 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
 }
 
 .projects h1 {
@@ -362,6 +371,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start; 
 }
 
 .projects__card {
@@ -369,7 +379,7 @@
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/aiChatBot.png'); /* background gradient for image */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.8) 100%), url('images/aiChatBot.png'); /* background gradient for image */
     background-size: cover;
     position: relative;
     color: #fff;
@@ -377,25 +387,29 @@
 }
 
 .projects__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/project2.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.8) 100%), url('images/githubLogo.png');
 }
 
 .projects__card:nth-child(3) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/project2.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.8) 100%), url('images/spotify.png');
 }
 
+.projects__card:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.8) 100%), url('images/dijkstra-graph.png');
+}
 
 .projects h2 {
     position: absolute;
-    top: 320px;
-    left: 30px;
+    top: 300px;
+    margin: 0 30px;
     text-shadow: 0.1rem 0.1rem black;
 }
 
 .projects__card p {
     position: absolute;
-    top: 380px;
-    left: 30px;
+    white-space: normal;
+    margin: 0 30px;
+    top: 340px;
 }
 
 .projects__card button {
