@@ -20,7 +20,10 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a class="navbar__links">Projects</a>
+                    <a id="projects-link" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a id="experience-link" class="navbar__links">Experience</a>
                 </li>
                 <li class="navbar__btn">
                     <a href="https://github.com/Swoozerr" target="_blank" class="button"><img src="images/githubLogo.png" alt="github logo"></a>
@@ -39,6 +42,56 @@
             </div>
             <div class="main__img--container">
                 <img src="images/heroImage.jpg" alt="profile photo" id="main__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Experience Section-->
+    <div class="jobs">
+        <h1>Experience</h1>
+        <div class="jobs__container">
+            <div class="jobs__card">
+                <div class="jobs__heading">
+                    <img src="images/madison.jpg" alt="UW Madison logo" class="jobs__logo">
+                    <div class="jobs__info">
+                        <h2>Student Shift Lead - UW Madison</h2>
+                        <span class="jobs__meta">Jan 2023 — Present · Madison, WI</span>
+                    </div>
+                </div>
+                <ul class="jobs__bullets">
+                    <li>Oversaw dining hall operations serving up to 1,200 students per meal period (lunch and dinner).</li>
+                    <li>Managed new staff onboarding, team scheduling, and inventory to ensure efficient daily operations.</li>
+                </ul>
+            </div>
+
+            <div class="jobs__card">
+                <div class="jobs__heading">
+                    <img src="images/primeVideo.png" alt="Amazon Prime logo" class="jobs__logo">
+                    <div class="jobs__info">
+                        <h2>SDE Intern — Amazon</h2>
+                        <span class="jobs__meta">May 2025 — Aug 2025 · Austin, TX</span>
+                    </div>
+                </div>
+                <ul class="jobs__bullets">
+                    <li>Prime Video Sports team focused on delivering live televised sports experiences (NBA, NFL, MLB, and more).
+.</li>
+                    <li>Built an end-to-end internal debugging tool using AWS Lambda and AWS CDK to diagnose geo-restrictions for events, reducing on-call debugging time by 75% (from 1 hour to ~15 minutes).</li>
+                    <li>Skills/tools: Kotlin, TS, Angular, Netflix Hollow, Guice, CI/CD (Pipelines), Monitoring (CloudWatch).</li>
+                </ul>
+            </div>
+
+            <div class="jobs__card">
+                <div class="jobs__heading">
+                    <img src="images/bassPro.png" alt="Bass Pro logo" class="jobs__logo">
+                    <div class="jobs__info">
+                        <h2>Sales Associate — Bass Pro</h2>
+                        <span class="jobs__meta">Jun 2022 — Dec 2022 · Bolingbrook, IL</span>
+                    </div>
+                </div>
+                <ul class="jobs__bullets">
+                    <li>Ensured optimal product presentation by stocking shelves and maintaining visual appeal.</li>
+                    <li>Utilized RFID technology to manage inventory, handling the receiving and organization of new products.</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -75,11 +128,25 @@
                     <button>Click to View</button>
                 </a>
             </div>
+            <div class="projects__card">
+                <h2>CSFloat Price Notifier</h2>
+                <p>Notifier that pings the user when a specific CS item falls below a specified price.</p>
+                <a href="https://github.com/Swoozerr/csfPriceNotifier" target="_blank">
+                    <button>Click to View</button>
+                </a>
+            </div>
+            <div class="projects__card">
+                <h2>DailyDare</h2>
+                <p>Social media app that prompts users with a daily challenge that they take video proof of completing. Photo or video proof can then be posted and shared among friends.</p>
+                <a href="https://github.com/mrotblut/CS407-Project-DailyDare" target="_blank">
+                    <button>Click to View</button>
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Footer Section -->
-    <div class="footer__container">Copyright © 2023. All rights reserved | Lucas Cheng </div>
+    <div class="footer__container">Copyright © 2025. All rights reserved | Lucas Cheng </div>
 
     <script src="app.js"></script>
 </body>

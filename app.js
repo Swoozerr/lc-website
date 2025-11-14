@@ -1,7 +1,9 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
-const projectButton = document.querySelector('.navbar__links');
+const projectButton = document.querySelector('#projects-link');
+const experienceButton = document.querySelector('#experience-link');
 const projectSection = document.querySelector('.projects');
+const experienceSection = document.querySelector('.jobs');
 
 const headerHeight = document.querySelector('.navbar').offsetHeight; // Get the height of the header
 
@@ -15,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function() { /* make sure HTML fin
     /* for project jump */
     projectButton.addEventListener('click', function() {
         projectSection.scrollIntoView({ behavior: 'smooth' })
+    })
+
+    /* for experience jump */
+    experienceButton.addEventListener('click', function() {
+        experienceSection.scrollIntoView({ behavior: 'smooth' })
     })
 
     /* scroll navbar out of view */
@@ -37,4 +44,3 @@ document.addEventListener('DOMContentLoaded', function() { /* make sure HTML fin
         lastScrollTop = currentScrollTop;
     })
 })
-
